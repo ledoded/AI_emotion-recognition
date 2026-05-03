@@ -14,7 +14,7 @@ def get_resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 # Загрузка TFLite модели
-MODEL_PATH = get_resource_path('C:/Users/1/PycharmProjects/PythonProject3/emotion_model.tflite')
+MODEL_PATH = 'emotion_model.tflite'
 interpreter = tf.lite.Interpreter(model_path=MODEL_PATH)
 interpreter.allocate_tensors()
 
